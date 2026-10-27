@@ -1,14 +1,22 @@
-# Katherine Johnson — Pioneira da Computação Espacial
+# Katherine Johnson — Órbita 01
 
-React / Express / tRPC / Drizzle starter, adapted from the Sandbox web-db-user template.
+Site biográfico escolar sobre Katherine Johnson, matemática e pesquisadora negra que contribuiu para as primeiras missões espaciais tripuladas dos Estados Unidos.
 
-- `pnpm dev`: development server; honors `PORT` (default 3000).
-- `pnpm build` / `pnpm start`: build and serve `dist/index.js` and `dist/public/`.
-- `pnpm db:migrate`: apply checked-in migrations. `pnpm db:push`: generate and apply new schema changes.
-- `pnpm check` / `pnpm test`: types and application tests.
+## Desenvolvimento
 
-Start with the Webdev skill's default-template guide. Platform login, storage, payments and service contracts live in its shared references; read the relevant capability before extending its helper.
+```bash
+pnpm install
+pnpm dev
+```
 
-`server/_core/publicConfig.ts` exposes only named public runtime values. Private keys stay server-side. The platform serves managed `/manus-storage/` assets; the application does not register a second proxy.
+Para gerar a versão estática:
 
-Platform configuration is readable and editable through `webdev.config`. Default settings are initial values, not enforced constraints. The agent may modify the files, commands and configuration or follow the flexible guide for another stack.
+```bash
+pnpm build
+```
+
+A interface está em `client/src`, os assets públicos estão em `client/public` e o resultado do build é gerado em `dist/public`.
+
+## Conteúdo
+
+Os textos foram preparados a partir de fontes institucionais da NASA, do Smithsonian National Air and Space Museum e do National Women’s Hall of Fame. A página inclui uma linha do tempo, feitos, curiosidades, legado e um campo editável para os integrantes do grupo.

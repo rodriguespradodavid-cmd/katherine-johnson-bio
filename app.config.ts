@@ -1,3 +1,3 @@
 export default {
-  logoUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310519664004095680/ShTHnEtbYoQKnfCi.svg",
+  logoUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg",
 };

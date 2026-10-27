@@ -13,6 +13,5 @@
 - [x] Garantir textos legíveis, organização clara, hierarquia visual e acabamento adequado para uso em sala de aula.
 
 ## Verificação de entrega
-- [x] Manter o manifesto `public/manus-routes.json` sincronizado com as rotas reais.
 - [x] Rodar diagnósticos TypeScript e o build do projeto.
 - [x] Conferir a página em desktop e mobile antes de concluir.
