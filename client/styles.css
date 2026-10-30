@@ -233,3 +233,33 @@ h1 em, h2 em { color: var(--rust); font-style: italic; }
   .sources-list { margin-top: 20px; display: grid; gap: 14px; }
   .site-footer { grid-template-columns: 1fr; gap: 18px; }
 }
+
+/* Movimento editorial e espacial */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.75,.25,1); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.hero-section.reveal { opacity: 1; transform: none; }
+.hero-copy > * { animation: rise-in .8s both; }
+.hero-copy > *:nth-child(1) { animation-delay: .1s; }
+.hero-copy > *:nth-child(2) { animation-delay: .2s; }
+.hero-copy > *:nth-child(3) { animation-delay: .34s; }
+.hero-copy > *:nth-child(4) { animation-delay: .48s; }
+.hero-portrait-frame { animation: portrait-float 5s ease-in-out infinite; }
+.orbit-one { animation: orbit-spin 16s linear infinite; }
+.orbit-two { animation: orbit-spin-reverse 19s linear infinite; }
+.orbit-satellite { animation: satellite-pulse 2.6s ease-in-out infinite; }
+.achievement-card { overflow: hidden; }
+.achievement-card::after { content: ''; position: absolute; width: 120px; height: 120px; border: 1px solid rgba(213,166,70,.35); border-radius: 50%; right: -58px; top: -58px; transition: transform .5s ease; }
+.achievement-card:hover::after { transform: scale(1.65); }
+.fixed-group { transform: rotate(-1deg); transition: transform .35s ease, box-shadow .35s ease; }
+.fixed-group:hover { transform: rotate(0) translateY(-5px); box-shadow: 11px 16px 0 rgba(24,59,89,.18); }
+.fixed-members { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 27px 0; }
+.fixed-members > div { display: flex; align-items: center; gap: 13px; border-bottom: 1px solid var(--line); padding: 12px 0; }
+.fixed-members span { color: var(--rust); font: 700 10px 'Space Mono', monospace; }
+.fixed-members strong { font-size: 15px; font-weight: 600; }
+@keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes portrait-float { 0%, 100% { transform: rotate(3.5deg) translateY(0); } 50% { transform: rotate(2deg) translateY(-10px); } }
+@keyframes orbit-spin { from { transform: rotate(-34deg) rotate(0deg); } to { transform: rotate(-34deg) rotate(360deg); } }
+@keyframes orbit-spin-reverse { from { transform: rotate(27deg) rotate(360deg); } to { transform: rotate(27deg) rotate(0deg); } }
+@keyframes satellite-pulse { 0%, 100% { box-shadow: 0 0 0 7px rgba(201,76,58,.14); } 50% { box-shadow: 0 0 0 14px rgba(201,76,58,.03); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } .reveal { opacity: 1; transform: none; } }
+@media (max-width: 560px) { .fixed-members { grid-template-columns: 1fr; } }

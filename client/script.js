@@ -1,24 +1,15 @@
-const memberInputs = [...document.querySelectorAll("[data-member]")];
-const groupMessage = document.querySelector("#group-message");
-const copyButton = document.querySelector("#copy-button");
+const elements = document.querySelectorAll(".reveal");
 
-function updateGroupMessage() {
-  const members = memberInputs.map((input) => input.value.trim()).filter(Boolean);
-  groupMessage.textContent = `Grupo: ${members.join(", ")} | Pessoa escolhida: Katherine Johnson`;
-}
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 },
+);
 
-memberInputs.forEach((input) => input.addEventListener("input", updateGroupMessage));
-
-copyButton.addEventListener("click", async () => {
-  try {
-    await navigator.clipboard.writeText(groupMessage.textContent);
-    copyButton.textContent = "✓  comentário copiado";
-    window.setTimeout(() => {
-      copyButton.textContent = "▣  copiar comentário";
-    }, 2200);
-  } catch {
-    copyButton.textContent = "selecione o texto acima";
-  }
-});
-
-updateGroupMessage();
+elements.forEach((element) => observer.observe(element));
