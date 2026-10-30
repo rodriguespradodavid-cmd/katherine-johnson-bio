@@ -1,6 +1,6 @@
 SITE BIOGRÁFICO — KATHERINE JOHNSON
 
-Versão com visual escolar feito à mão, em HTML, CSS e JavaScript.
+Versão simples e humana em HTML, CSS e JavaScript.
 
 Integrantes: David Rodrigues e Vitor Simonini.
 
