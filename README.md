@@ -2,6 +2,10 @@
 
 Site biográfico escolar sobre Katherine Johnson, matemática e pesquisadora negra que contribuiu para as primeiras missões espaciais tripuladas dos Estados Unidos.
 
+## Estrutura
+
+O site agora é feito com HTML puro em `client/index.html`, estilos em `client/styles.css` e interações em `client/script.js`. A fotografia está em `client/public/images/`.
+
 ## Desenvolvimento
 
 ```bash
@@ -15,7 +19,7 @@ Para gerar a versão estática:
 pnpm build
 ```
 
-A interface está em `client/src`, os assets públicos estão em `client/public` e o resultado do build é gerado em `dist/public`.
+O resultado do build é gerado em `dist/public`.
 
 ## Conteúdo
 
