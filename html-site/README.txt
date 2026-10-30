@@ -1,6 +1,6 @@
 SITE BIOGRÁFICO — KATHERINE JOHNSON
 
-Versão simples e humana em HTML, CSS e JavaScript.
+Versão minimalista em HTML, CSS e JavaScript.
 
 Integrantes: David Rodrigues e Vitor Simonini.
 
