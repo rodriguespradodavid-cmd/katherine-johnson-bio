@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
 
-:root { --blue: #173b6c; --red: #d94b43; --gray: #667085; --line: #cbd5e1; --paper: #edf4fb; }
+:root { --blue: #f5f7fb; --red: #ff9387; --gray: #d7e0eb; --line: rgba(255,255,255,.28); --paper: #2f527d; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--paper); color: var(--blue); font-family: 'Atkinson Hyperlegible', Arial, sans-serif; }

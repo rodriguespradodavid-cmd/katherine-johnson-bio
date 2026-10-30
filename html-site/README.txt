@@ -1,6 +1,6 @@
 SITE BIOGRÁFICO — KATHERINE JOHNSON
 
-Versão minimalista com fundo azul claro, em HTML, CSS e JavaScript.
+Versão minimalista com fundo azul-marinho médio, em HTML, CSS e JavaScript.
 
 Integrantes: David Rodrigues e Vitor Simonini.
 
