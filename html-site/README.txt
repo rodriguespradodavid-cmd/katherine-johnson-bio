@@ -1,6 +1,6 @@
 SITE BIOGRÁFICO — KATHERINE JOHNSON
 
-Versão com textos maiores e animações visuais simples, em HTML, CSS e JavaScript.
+Versão ampliada da biografia, com mais informações sobre infância, formação, NASA, missões, curiosidades e legado.
 
 Integrantes: David Rodrigues e Vitor Simonini.
 

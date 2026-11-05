@@ -64,3 +64,19 @@ footer p { margin: 0; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .reveal { opacity: 1; transform: none; } }
 @media (max-width: 760px) { .topo { align-items: flex-start; } nav { gap: 12px; flex-wrap: wrap; justify-content: flex-end; } .apresentacao { grid-template-columns: 1fr; gap: 35px; padding: 55px 0 65px; } .foto-principal { width: min(360px, 100%); } .foto-principal img { height: 320px; } .bloco { grid-template-columns: 1fr; gap: 12px; padding: 60px 0; } .lista-feitos { grid-template-columns: 1fr; gap: 20px; } .lista-feitos article { min-height: auto; padding: 0 0 20px; border-right: 0; border-bottom: 1px solid var(--line); } .lista-feitos article:last-child { border-bottom: 0; padding-bottom: 0; } footer { display: block; } footer p + p { margin-top: 8px; } }
 @media (max-width: 480px) { .topo, main, footer { width: calc(100% - 28px); } .marca small { max-width: 170px; } nav a { font-size: 15px; } h1 { font-size: 4rem; } .resumo { font-size: 19px; } .sobre p, .nota p:last-child { font-size: 19px; } }
+
+.texto-extra { max-width: 760px; }
+.texto-extra p { margin: 0 0 22px; color: var(--gray); font-size: 21px; }
+.texto-extra p:last-child { margin-bottom: 0; }
+.carreira, .importancia, .legado { background: rgba(255,255,255,.025); }
+.linha-tempo h2 { margin-bottom: 35px; }
+.eventos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 30px; border-left: 2px solid var(--red); padding-left: 25px; }
+.evento { position: relative; padding: 0 0 28px; }
+.evento::before { content: ''; position: absolute; width: 11px; height: 11px; border-radius: 50%; background: var(--red); left: -32px; top: 7px; transition: transform .25s ease, background .25s ease; }
+.evento:hover::before { transform: scale(1.5); background: var(--blue); }
+.evento strong { color: var(--red); font-size: 20px; }
+.evento p { margin: 6px 0 0; color: var(--gray); font-size: 18px; line-height: 1.5; }
+.nota p { color: var(--gray); font-size: 20px; line-height: 1.6; }
+.nota p:last-child { margin-bottom: 0; }
+.texto-fonte { max-width: 700px; margin: -5px 0 25px; color: var(--gray); font-size: 18px; }
+@media (max-width: 760px) { .eventos { grid-template-columns: 1fr; } .texto-extra p, .nota p, .texto-fonte { font-size: 19px; } }
