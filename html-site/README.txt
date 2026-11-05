@@ -1,6 +1,6 @@
 SITE BIOGRÁFICO — KATHERINE JOHNSON
 
-Versão ampliada, com layout mais espaçado e leitura mais confortável.
+Versão com biografia ampliada e abertura visual redesenhada.
 
 Integrantes: David Rodrigues e Vitor Simonini.
 
