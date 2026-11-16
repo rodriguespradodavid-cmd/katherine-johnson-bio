@@ -1,6 +1,6 @@
 SITE BIOGRÁFICO — KATHERINE JOHNSON
 
-Versão com melhoria visual completa, seções destacadas, linha do tempo em blocos e cartões para os feitos.
+Trabalho de programação com Python.
 
 Integrantes: David Rodrigues e Vitor Simonini.
 
